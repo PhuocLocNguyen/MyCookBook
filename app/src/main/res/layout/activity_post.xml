@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaildyhoang.mycookbookapplication.PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewIllPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/load_icon" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewTitlePost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableLeft="@drawable/ic_title_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:padding="10dp"
+                    android:text="Title"
+                    android:textSize="10pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewDesciption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:padding="8dp"
+                    android:text="Desciption"
+                    android:textSize="7pt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ingredient:"
+                        android:textSize="10pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewCountOfPeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="5(peoples)"
+                        android:textAlignment="textEnd"
+                        android:textSize="7pt"
+                        android:drawablePadding="2dp"
+                        android:padding="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:drawableLeft="@drawable/ic_supervisor_account_black_24dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutIngredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewIngredient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="16dp"
+                        android:padding="8dp"
+                        android:text="500 gram Sugar"
+                        android:textSize="7pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Direction:"
+                        android:textSize="10pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewDirectionTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="30(minutes)"
+                        android:textAlignment="textEnd"
+                        android:textSize="7pt"
+                        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                        android:hint="30(mins.)"
+                        android:inputType="number"
+                        android:drawablePadding="2dp"
+                        android:padding="8dp"
+                        android:layout_marginBottom="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutDirection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewDirectionContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="4"
+                            android:text="500 gram Sugar"
+                            android:textSize="7pt" />
+
+                        <ImageView
+                            android:id="@+id/imageViewDirectionIllPic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/load_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

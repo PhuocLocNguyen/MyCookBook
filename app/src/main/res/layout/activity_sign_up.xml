@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food3"
+    tools:context="com.example.kaildyhoang.mycookbookapplication.SignUpActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewGetImageSU"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+
+            <EditText
+                android:id="@+id/editTextInputNameSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:background="#FF9800"
+                android:drawableLeft="@drawable/ic_user_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Enter your name..."
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editTextInputBirthDaySU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:background="#FF9800"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="16dp"
+                android:editable="false"
+                android:hint="Enter your birthday..."
+                android:padding="8dp"
+                tools:ignore="Deprecated" />
+
+
+            <EditText
+                android:id="@+id/editTextInputEmailSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:background="#FF9800"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Enter your email..."
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextInputPasswordSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:background="#FF9800"
+                android:drawableLeft="@drawable/ic_lock_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Enter your password..."
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextInputAddressSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:background="#FF9800"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Enter your address..."
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextInputDescriptionSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                android:background="#FF9800"
+                android:drawableLeft="@drawable/ic_description_black_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Enter your description..."
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:padding="10dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenderSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender: "
+                    android:textAlignment="center"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaleSU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="8pt" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemaleSU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="8pt" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOthersSU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textSize="8pt" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonSignUpSU"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.9"
+                android:background="@drawable/button_design"
+                android:text="SIGN UP"
+                android:textColor="#ffffff"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonEditProfileSU"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.9"
+                android:background="@drawable/button_design"
+                android:text="Edit Profile"
+                android:textColor="#ffffff"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

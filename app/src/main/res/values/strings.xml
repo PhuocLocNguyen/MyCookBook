@@ -1,0 +1,11 @@
+<resources>
+    <string name="facebook_app_id">136385260281172</string>
+    <string name="app_name">CookBook</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+
+    <string name="signed_out">Signed Out</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kaildyhoang.mycookbookapplication">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.MainActivity_View"
+            android:label="MainView"
+            android:parentActivityName=".SignInActivity"/>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up"
+            android:parentActivityName=".SignInActivity"/>
+        <activity
+            android:name=".AddNewPostActivity"
+            android:label="Add New Post" />
+        <activity
+            android:name=".SearchFriendsActivity"
+            android:label="Search Friends"
+            android:parentActivityName=".view.MainActivity_View"/>
+        <activity
+            android:name=".UserActivity"
+            android:label="My Home"
+            android:parentActivityName=".view.MainActivity_View"/>
+        <activity
+            android:name=".PostActivity"
+            android:label="Post" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="Chat"
+            android:parentActivityName=".view.MainActivity_View"/>
+        <activity
+            android:name=".view.Notifi"
+            android:label="Notifications"
+            android:parentActivityName=".view.MainActivity_View"/>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="Notifications"
+            android:parentActivityName=".view.MainActivity_View"/>
+        <activity android:name="com.facebook.FacebookActivity"/>
+
+        <service
+            android:name=".services.FirebaseBackgroundService"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.example.bgfirebaseapp.FirebaseBackgroundService" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".services.StartFirebaseAtBoot" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/container">
+
+
+    <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/relativeLayoutChat">
+                                <ImageView
+                                    android:id="@+id/imageViewChat"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/chat_icon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:textSize="6pt"
+                                    android:textStyle="bold"
+                                    android:textColor="#ffffff"
+                                    android:visibility="invisible"
+                                    android:id="@+id/textViewBadgeChat"
+                                    android:layout_marginRight="75dp"
+                                    android:background="@drawable/badge_item_count"
+                                    android:text="new"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageViewNoti"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/main_icon_report" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="65dp"
+                                    android:background="@drawable/badge_item_count"
+                                    android:text=""
+                                    android:visibility="invisible"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#ffffff"
+                                    android:textSize="6pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/textViewBadgeNotification"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="22dp" />
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/imageViewNavMenu"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/navmenu_icon" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="386dp"
+                            android:layout_height="153dp"
+                            android:scaleType="center"
+                            android:layout_gravity="center"
+                            android:src="@drawable/logo" />
+
+                        <EditText
+                            android:id="@+id/editText_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/boder_edittext"
+                            android:drawableRight="@drawable/icon_search"
+                            android:editable="false"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:padding="10dp"
+                            android:hint="Ex: cookbook@gmail.com"
+                            android:inputType="none"/>
+
+                        <TextView
+                            android:id="@+id/textView_demo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Let's find your favourite!..."
+                            android:textSize="10pt" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewShow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        android:layout_margin="10dp" />
+
+                </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/plus_icon"/>
+
+</android.support.design.widget.CoordinatorLayout>
